@@ -1,3 +1,11 @@
-what does Mary think John knows ?
-@what does Mary think ?
-@John knows ?
+the dogs bark .
+@the dog bark .
+@the dogs barks .
+@dog bark .
+@the dogs bark the cats .
+@John thought the book .
+@Mary put the book .
+@put Mary the book on the shelf ?
+@what did Mary put ?
+@Mary saw himself .
+@Mary reached the summit for five minutes .

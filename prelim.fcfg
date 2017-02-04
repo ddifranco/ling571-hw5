@@ -1,0 +1,63 @@
+% start ROOT
+
+#### Grammatical Component
+
+#what did Mary put on the shelf ?
+
+ROOT -> S PUNC
+
+S  -> VP 
+S  -> NP VP 
+S  -> V[+aux] NP VP 
+S  -> Wh-NP V[+aux] NP VP 
+
+SBAR -> IN S
+
+VP -> V
+VP -> V S
+VP -> V SBAR
+VP -> V PP
+VP -> V NP
+PP -> IN NP
+VP -> V NP PP
+VP -> V JJ
+
+NP -> Det N
+NP -> N
+NP -> PRP
+NP -> NNP 
+NP -> CD NP
+
+#### Lexical Component
+
+Det -> 'the' | 'that'
+
+V[NUM=sg] -> 'bark'  | 'know' | 'think' 
+V[NUM=pl] -> 'barks' | 'knows' 
+V -> 'thought' | 'put' | 'was' | 'reached' | 'walked'  | 'saw'   
+V[+aux] -> 'did' | 'does'
+
+Wh-NP -> 'what'
+N   -> 'dogs' | 'dog' | 'cats' | 'shelf' | 'book' |  'minutes' | 'summit' 
+NNP -> 'John' |  'Mary' | 'Tuesday'
+PRP -> 'herself' | 'himself' 
+
+IN -> 'on' | 'for' | 'that'
+JJ -> 'interesting' 
+CD -> 'five'
+
+PUNC -> '.' | '?'
+
+#what did Mary put on the shelf ?
+#what does Mary think John knows ?
+#Hard: John thought that the book was interesting .
+#Byeond Repair: put Mary the book on the shelf ?
+#what did Mary put ?
+#what does John know ?
+#Mary saw herself .
+#Mary saw himself .
+#John saw himself .
+#John reached the summit on Tuesday .
+#Mary reached the summit for five minutes .
+#John walked on Tuesday .
+#Mary walked for five minutes .
