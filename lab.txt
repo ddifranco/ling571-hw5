@@ -1,0 +1,3 @@
+what does Mary think John knows ?
+@what does Mary think ?
+@John knows ?
